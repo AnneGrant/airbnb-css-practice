@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">    <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/home.css">
     <title>Document</title>
@@ -15,48 +14,74 @@
 <body>
     <main>
         <header>
-            <div class="logo">Airbnb logo</div>
+            <div class="logo">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F1000logos.net%2Fwp-content%2Fuploads%2F2017%2F08%2FAirbnb-Logo.png&f=1&nofb=1" alt="Airbnb logo">
+            </div>
             <div class="nav">
                 <label for="globe-dropdown"></label>
-                <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Globe_icon_4.svg/768px-Globe_icon_4.svg.png" alt="globe icon" width="20" height="20"> -->
-                <select name="globe" id="globe">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Globe_icon_4.svg/768px-Globe_icon_4.svg.png" alt="globe icon" width="20" height="20">
+                <select name="globe" class="drop-down">
                     <option value="english"></option>
                     <option value="USD"></option>
                 </select>
+                <div class="nav-item">Host your home</div>
+                <div class="nav-item">Host an experience</div>
+                <div class="nav-item">Help</div>
+                <div class="nav-item">Log in</div>
+                <div class="nav-item">
+                    <button class="button">Sign up</button>
+                </div>
             </div>
-            <div class="nav">Host your home</div>
-            <div class="nav">Host an experience</div>
-            <div class="nav">Help</div>
-            <div class="nav">Log in</div>
-            <div class="nav">Sign up</div>
         </header>
         <h1>
             <div class="what-are-you-looking-for">
                 <ul>
-                    <li>Places to stay</li>
-                    <li>Monthly stays</li>
-                    <li>Experiences</li>
-                    <li>Online Experiences</li>
+                    <li class="one">Places to stay</li>
+                    <li class="two">Monthly stays</li>
+                    <li class="three">Experiences</li>
+                    <li class="four">Online Experiences</li>
+                    <li class="new">NEW</li>
                 </ul>
+                <hr />
             </div>
         </h1>
         <h2>
-            <div class="search-field">
-                <ul>
+            <div class="location-field">
+               LOCATION
+               <br>
+               <div id="field">Where are you going?</div>
+            </div>
+            <div class="check-in-check-out">
+                CHECK-IN / CHECK-OUT
+                <br>
+                <div id="field">Add dates</div>
+            </div>
+            <div class="guests">
+                GUESTS
+                <br>
+                <div id="field">Add guests</div>
+            </div>
+            <div class="search">
+                <button class="search-button">
+                    <img src="http://www.clker.com/cliparts/Y/3/d/w/R/r/search-icon-white-hi.png" alt="magnifying glass" class="search-icon">
+                    Search
+                </button>
+            </div>
+                <!-- <ul>
                     <li>LOCATION</li>
                     <li>CHECK IN / CHECK OUT</li>
                     <li>GUESTS</li>
                     <li>SEARCH</li>
-                </ul>
-            </div>
+                </ul> -->
+            
         </h2>
         <h3>
             We may be apart, but we'll get through this together.
         </h3>
         <section class="images">
-            <img src="https://images.contentstack.io/v3/assets/bltb428ce5d46f8efd8/bltb98f408a5091781f/5e8fbb2f39693e2b2905bc6f/040520-Airbnb_Virtual_Experience-Online-00461_comp_JL1_2.jpg?crop=85.08p,53.84p,x14.91p,y34.31p&width=720&height=405&auto=webp" alt="iPad with sheep">
-            <img src="https://images.contentstack.io/v3/assets/bltb428ce5d46f8efd8/blt80cc33ff9a705fc5/5f07739a2c573e7f04e7cc1a/2UV408PJAI5MH.jpg?crop=100p,84.47p,x0,y10.78p&width=720&height=405&auto=webp" alt="mother and daughter">
-            <img src="https://images.contentstack.io/v3/assets/bltb428ce5d46f8efd8/bltefa6724750e7f65c/5e949f2ee6a96d78e239d8d3/frontline_stays_alt_3up_2x_(1).jpg?crop=100p,90.93p,x0,y0&width=720&height=405&auto=webp" alt="woman in mask">
+            <img src="https://images.contentstack.io/v3/assets/bltb428ce5d46f8efd8/bltb98f408a5091781f/5e8fbb2f39693e2b2905bc6f/040520-Airbnb_Virtual_Experience-Online-00461_comp_JL1_2.jpg?crop=85.08p,53.84p,x14.91p,y34.31p&width=720&height=405&auto=webp" alt="iPad with sheep" class="pics">
+            <img src="https://images.contentstack.io/v3/assets/bltb428ce5d46f8efd8/blt80cc33ff9a705fc5/5f07739a2c573e7f04e7cc1a/2UV408PJAI5MH.jpg?crop=100p,84.47p,x0,y10.78p&width=720&height=405&auto=webp" alt="mother and daughter" class="pics">
+            <img src="https://images.contentstack.io/v3/assets/bltb428ce5d46f8efd8/bltefa6724750e7f65c/5e949f2ee6a96d78e239d8d3/frontline_stays_alt_3up_2x_(1).jpg?crop=100p,90.93p,x0,y0&width=720&height=405&auto=webp" alt="woman in mask" class="pics">
         </section>
     </main>
     
